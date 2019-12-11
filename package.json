@@ -1,0 +1,17 @@
+{
+  "name": "icourse-answer",
+  "version": "1.0.0",
+  "description": "fuck icourse",
+  "main": "index.js",
+  "author": "colinaaa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "ts-node fuck.ts"
+  }
+}
