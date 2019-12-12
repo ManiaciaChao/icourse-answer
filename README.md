@@ -31,7 +31,7 @@ and copy `${chapter}-submit.js` into `Chrome` console.
 
 ## TODO List
 
-- [ ] get answer with picture
+- [x] get answer with picture
 - [ ] input answer when the order change
 
 ## Author

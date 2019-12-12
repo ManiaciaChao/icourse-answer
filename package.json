@@ -15,6 +15,7 @@
     "mkdirp": "^0.5.1"
   },
   "scripts": {
-    "start": "ts-node fuck.ts"
+    "start": "ts-node fuck.ts",
+    "build": "zip -r answer.zip data"
   }
 }
