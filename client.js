@@ -15,3 +15,5 @@ var simulateClick = simulateClick || (elem => {
 all.map((i, index) => Array.from(i.querySelectorAll('.optionCnt')).filter(ans => patch(ans.innerText) === qs[index].ans)).flat().forEach(a => simulateClick(a))
 
 qs.filter(q => q.ans === 'wrong' || q.ans === 'correct').forEach(q => simulateClick(all[q.id].querySelector(`.u-icon-${q.ans}`)))
+
+qs.filter(q => q.ans.startsWith('https://')).map(q => Array.from(all[q.id].querySelectorAll('img')).filter(img => img.src === q.ans)).flat().forEach(i => simulateClick(i))

@@ -1,6 +1,6 @@
 choices = [];
 
-choices = $$('.optionPos').map((i, index) => ({ pos: i.innerText.replace('.', '').trim(), content: i.nextSibling.innerText.trim() || i.nextSibling.firstChild.classList.value.replace('u-icon-', ''), index: index }))
+choices = $$('.optionPos').map((i, index) => ({ pos: i.innerText.replace('.', '').trim(), content: i.nextSibling.innerText.trim() || i.nextSibling.firstChild.classList.value.replace('u-icon-', '') || i.nextSibling.querySelector('img').src, index: index }))
 
 endAt = [0];
 
