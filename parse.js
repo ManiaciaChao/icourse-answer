@@ -31,5 +31,3 @@ questions.forEach(i => i.answerContent = i.choices.filter(ch => ch.pos.includes(
 $$('.f-richEditorText').filter(i => !i.classList.value.includes('optionCnt')).forEach((q, index) => questions[index].question = q.innerText)
 
 JSON.stringify(questions)
-
-// $$('.m-choiceQuestion ul').map(i => Array.from(i.children)).map((q, index) => q.filter(n => n.querySelector('.optionCnt').innerText.includes(questions[index].answerContent) || n.querySelector('optionCnt').classList.value.includes(questions[index].answerContent)))
